@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../pages/img/Screenshot_2024-02-06-21-13-00-128_com.whatsapp-edit.jpg'
+import img from '../pages/img/img.png'
 import  {Link}  from 'react-router-dom'
 import { GlobalContext } from '../components/ContextApi'
 const Home = () => {
