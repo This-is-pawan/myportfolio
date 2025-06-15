@@ -16,7 +16,7 @@ const Project = () => {
         isDarkTheme ? "bg-gradient-to-r from-slate-300 to-gray-800" : ""
       }  p-4 min-h-screen `}
     >
-      <div className="grid grid-cols-2 gap-8 mt-20">
+      <div className="grid grid-cols-2 gap-8 mt-20 xl:grid grid-cols-1 gap-8 mt-20">
         <div className={`shadow-xl ${isDarkTheme?'bg-pink-950':'bg-pink-800'} rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}>
           <img src={cocktail} alt="ias_course" title="cocktail" className="rounded-t-xl object-cover border-none" />
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">

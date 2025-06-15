@@ -14,7 +14,7 @@ const getInitialDarkMode = () => {
 const AppContextProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
 
-  const toggleDarkTheme = () => {
+  const toggleDarkTheme = () => {isDarkTheme, toggleDarkTheme,toast
     setIsDarkTheme((prev) => !prev);
   };
 
@@ -23,7 +23,7 @@ const AppContextProvider = ({ children }) => {
   }, [isDarkTheme]);
 
   return (
-    <AppContext.Provider value={{ isDarkTheme, toggleDarkTheme,toast }}>
+    <AppContext.Provider value={{  }}>
       {children}
     </AppContext.Provider>
   );
