@@ -126,7 +126,7 @@ const Project = () => {
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
             <Link
               className="flex justify-around items-center"
-              to="https://delicate-manatee-661e56.netlify.app"
+              to="https://jobify-project-one.vercel.app"
             >
               {" "}
               <FaGithub />
