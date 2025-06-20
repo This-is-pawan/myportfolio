@@ -22,8 +22,8 @@ const skills = [
   { skill: "Git", percentage: "80%", value: 80 ,icon:<FaGitAlt/>},
   { skill: "Github", percentage: "90%", value: 90 ,icon:<FaGithub/>},
   { skill: "deployment", percentage: "70%", value: 70,icon: <AiOutlineDeploymentUnit/>},
-  { skill: "nextjs", percentage: "60%", value: 40,icon: <RiNextjsFill />},
-  { skill:"typescript", percentage: "50%", value: 50,icon:<SiTypescript/>},
+  { skill: "Nextjs", percentage: "60%", value: 40,icon: <RiNextjsFill />},
+  { skill:"Typescript", percentage: "50%", value: 50,icon:<SiTypescript/>},
 ];
 
 export default skills;
