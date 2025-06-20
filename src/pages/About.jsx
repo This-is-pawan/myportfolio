@@ -45,7 +45,7 @@ const About = () => {
                 style={{ "--value": skillname.value }}
                 role="progressbar"
               >
-                {skillname.percentage}
+                {skillname.percentage} 
               </div>
             </div>
           </div>
