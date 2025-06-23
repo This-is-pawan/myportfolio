@@ -98,8 +98,8 @@ const Project = () => {
         >
           <img
             src={profile}
-            alt="ias_course"
-            title="course"
+            alt="profile"
+            title="profile"
             className="rounded-t-xl object-cover border-none"
           />
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
@@ -119,8 +119,8 @@ const Project = () => {
         >
           <img
             src={jobify}
-            alt="ias_course"
-            title="cocktail"
+            alt="jobify"
+            title="jobify"
             className="rounded-t-xl object-cover border-none"
           />
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
