@@ -22,7 +22,7 @@ const skills = [
   { skill: "Git", percentage: "80%", value: 80 ,icon:<FaGitAlt/>},
   { skill: "Github", percentage: "90%", value: 90 ,icon:<FaGithub/>},
   { skill: "deployment", percentage: "70%", value: 70,icon: <AiOutlineDeploymentUnit/>},
-  { skill: "Nextjs", percentage: "60%", value: 40,icon: <RiNextjsFill />},
+  { skill: "Nextjs", percentage: "78%", value: 78,icon: <RiNextjsFill />},
   { skill:"Typescript", percentage: "60%", value: 60,icon:<SiTypescript/>},
 ];
 
