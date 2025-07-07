@@ -10,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-
+import { SiMysql } from "react-icons/si";
 const skills = [
   { skill: "HTML5", percentage: "90%", value: 90, icon :<FaHtml5/> },
   { skill: "CSS3", percentage: "90%", value: 89 , icon : <SiCss3/> },
@@ -24,6 +24,7 @@ const skills = [
   { skill: "deployment", percentage: "70%", value: 70,icon: <AiOutlineDeploymentUnit/>},
   { skill: "Nextjs", percentage: "60%", value: 60,icon: <RiNextjsFill />},
   { skill:"Typescript", percentage: "40%", value: 40,icon:<SiTypescript/>},
+  { skill:"MySql", percentage:"60%", value:60,icon:<SiMysql/>},
 ];
 
 export default skills;
