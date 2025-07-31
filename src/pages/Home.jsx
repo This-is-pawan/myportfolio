@@ -13,7 +13,7 @@ const Home = () => {
     <div>
  <h1 className=' w-full text-6xl font-bold max-sm:text-3xl text-center'> 👋🏻 Hey I'm pawan  </h1>
     </div>
-     <p className={`text-center my-14 leading-10 capitalize ${isDarkTheme?'text-pink-800':'text-pink-300'}   p-4`}>I am full stack  web developer (MERN_STACK ). i have 1+ year's of experience.  </p>
+     <p className={`text-center my-14 leading-10 capitalize ${isDarkTheme?'text-pink-800':'text-pink-300'}   p-4`}>I am a full-stack web developer (MERN stack) with over 1 year of experience.  </p>
 
   </div>
   <div className='flex justify-center ' >
