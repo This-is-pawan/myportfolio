@@ -23,8 +23,8 @@ const skills = [
   { skill: "Nextjs", percentage: "60%", value: 60,icon: <RiNextjsFill />},
   { skill:"Typescript", percentage: "40%", value: 40,icon:<SiTypescript/>},
   { skill:"MySql", percentage:"60%", value:60,icon:<SiMysql/>},
-  { skill: "Git", percentage: "80%", value: 70 ,icon:<FaGitAlt/>},
-  { skill: "Github", percentage: "90%", value: 80 ,icon:<FaGithub/>},
+  { skill: "Git", percentage: "70%", value: 70 ,icon:<FaGitAlt/>},
+  { skill: "Github", percentage: "80%", value: 80 ,icon:<FaGithub/>},
 ];
 
 export default skills;
