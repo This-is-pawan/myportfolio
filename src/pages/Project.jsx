@@ -2,8 +2,8 @@ import React from "react";
 import ias from "../pages/img/ias.png";
 import unsplash from "../pages/img/unsplash.png";
 import cocktail from "../pages/img/cocktail.png";
-import jobify from "./img/payrolldash.png"
-";
+import jobify from "./img/payrolldash.png";
+
 import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
