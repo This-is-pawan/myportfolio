@@ -2,7 +2,7 @@ import React from "react";
 import ias from "../pages/img/ias.png";
 import unsplash from "../pages/img/unsplash.png";
 import cocktail from "../pages/img/cocktail.png";
-import jobify from "../pages/img/jobify.png";
+import jobify from "./screenshot 2025-08-28 215521.png";
 import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
@@ -117,15 +117,13 @@ const Project = () => {
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
           } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
         >
-              <img width="1851" height="859"  alt="jobify"
-            title="jobify"
-            className="rounded-t-xl object-cover border-none" alt="Screenshot 2025-10-28 070458" src="https://github.com/user-attachments/assets/89ef9ff6-fd03-4962-a3f1-870f97f2da1d" /> 
-          /* {/* <img
-            src={jobify}
+            
+           <img
+            src={}
             alt="jobify"
             title="jobify"
             className="rounded-t-xl object-cover border-none"
-          /> */} */
+          /> 
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
             <Link
               className="flex justify-around items-center"
