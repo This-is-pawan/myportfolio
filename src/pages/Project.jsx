@@ -119,7 +119,7 @@ const Project = () => {
         >
             
            <img
-            src={}
+            src={jobify}
             alt="jobify"
             title="jobify"
             className="rounded-t-xl object-cover border-none"
