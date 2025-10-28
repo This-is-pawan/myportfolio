@@ -117,6 +117,9 @@ const Project = () => {
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
           } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
         >
+              <img width="1851" height="859"  alt="jobify"
+            title="jobify"
+            className="rounded-t-xl object-cover border-none" alt="Screenshot 2025-10-28 070458" src="https://github.com/user-attachments/assets/89ef9ff6-fd03-4962-a3f1-870f97f2da1d" /> 
           /* {/* <img
             src={jobify}
             alt="jobify"
