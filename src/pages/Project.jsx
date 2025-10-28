@@ -114,7 +114,7 @@ const Project = () => {
             </Link>
           </h1>
         </div>
-             <div
+             {/*<div
           className={`shadow-xl ${
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
           } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
@@ -126,7 +126,7 @@ const Project = () => {
             title="jobify"
             className="rounded-t-xl object-cover border-none"
           /> 
-          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
+           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
             <Link
               className="flex justify-around items-center"
               to="https://payroll-advance.vercel.app"
@@ -138,7 +138,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );
