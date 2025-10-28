@@ -105,7 +105,7 @@ const Project = () => {
           />
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
             <Link className="flex justify-around items-center" to="/">
-              {" "}
+            
               <FaGithub />
               <p className="text-[0.9rem] text-blue-900 underline">
                 Go to project ➟{" "}
@@ -130,7 +130,7 @@ const Project = () => {
               className="flex justify-around items-center"
               to="https://payroll-advance.vercel.app"
             >
-              {" "}
+              
               <FaGithub />
               <p className="text-[0.9rem] text-blue-900 underline">
                 Go to project ➟{" "}
