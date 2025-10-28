@@ -117,16 +117,16 @@ const Project = () => {
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
           } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
         >
-          <img
+          /* {/* <img
             src={jobify}
             alt="jobify"
             title="jobify"
             className="rounded-t-xl object-cover border-none"
-          />
+          /> */} */
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
             <Link
               className="flex justify-around items-center"
-              to="https://jobify-project-one.vercel.app"
+              to="https://payroll-advance.vercel.app"
             >
               {" "}
               <FaGithub />
