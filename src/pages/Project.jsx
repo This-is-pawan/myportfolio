@@ -44,7 +44,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-         <h1 class="text-white text-center pt-5">full stack with using MERN STACK technology</h1>
+         <h1 class="text-white text-center pt-5 pb-5">full stack with using MERN STACK technology</h1>
 
         </div> 
         {/*  */}
@@ -71,7 +71,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-          <h1 class="text-white text-center pt-5">React frontend using Routing system</h1>
+          <h1 class="text-white text-center pt-5 pb-5">React frontend using Routing system</h1>
 
         </div>
         {/*  */}
@@ -98,7 +98,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-          <h1 class="text-white text-center pt-5 ">pure HTML5,css3 and js</h1>
+          <h1 class="text-white text-center pt-5 pb-5 ">pure HTML5,css3 and js</h1>
 
         </div>
         {/*  */}
@@ -122,7 +122,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-          <h1 class="text-white text-center pt-5 ">vite react using portfolio</h1>
+          <h1 class="text-white text-center pt-5 pb-5 ">vite react using portfolio</h1>
 
         </div>
               
