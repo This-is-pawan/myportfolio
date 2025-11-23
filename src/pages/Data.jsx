@@ -21,8 +21,8 @@ const skills = [
   { skill: "Express", percentage: "78%", value: 78 ,icon:<SiExpress/>},
   { skill: "deployment", percentage: "70%", value: 70,icon: <AiOutlineDeploymentUnit/>},
   { skill: "Nextjs", percentage: "60%", value: 60,icon: <RiNextjsFill />},
-  { skill:"Typescript", percentage: "70%", value: 40,icon:<SiTypescript/>},
-  { skill:"MySql", percentage:"60%", value:60,icon:<SiMysql/>},
+  { skill:"Typescript", percentage: "70%", value: 70,icon:<SiTypescript/>},
+  { skill:"MySql", percentage:"40%", value:40,icon:<SiMysql/>},
   { skill: "Git", percentage: "70%", value: 70 ,icon:<FaGitAlt/>},
   { skill: "Github", percentage: "80%", value: 80 ,icon:<FaGithub/>},
 ];
