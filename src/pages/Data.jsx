@@ -49,4 +49,16 @@ export const timeLine = [
     learnigone: "Learning Node.js, Express, and MongoDB.",
     learnigsecond: "Learning frontend and backend (MERN Stack).",
   },
+  {
+    text: "I became a MERN Stack full developer and started building professional and scalable applications.",
+    year: 2026,
+    learnigone: "Working with React.js, Node.js, Express, and MongoDB in real-world projects.",
+    learnigsecond: "Improving deployment, performance optimization, authentication, and API integration skills.",
+  },{
+    text: "I focused on strengthening my problem-solving ability and DSA concepts to become a more efficient developer.",
+    year: 2027,
+    learnigone: "Learning Data Structures and Algorithms with JavaScript.",
+    learnigsecond: "Solving problems on platforms  LeetCode",
+  },
 ];
+
