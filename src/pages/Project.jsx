@@ -19,7 +19,7 @@ const Project = () => {
         isDarkTheme ? "bg-gradient-to-r from-slate-300 to-gray-800" : ""
       }  p-4 min-h-screen `}
     >
-      <div className="  grid grid-cols-2 gap-8 mt-20 md:grid-cols-1 gap-4 ">
+      <div className="  grid grid-cols-2 gap-8 mt-20 max-w-[500px]:grid-cols-1 gap-4 ">
         <div
           className={`shadow-xl ${
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
