@@ -44,6 +44,8 @@ const Project = () => {
               </p>
             </Link>
           </h1>
+         <h1 class="text-white text-center">full stack with using MERN STACK technology</h1>
+
         </div> 
         {/*  */}
         <div
@@ -69,6 +71,8 @@ const Project = () => {
               </p>
             </Link>
           </h1>
+          <h1 class="text-white">React frontend using Routing system</h1>
+
         </div>
         {/*  */}
         <div
@@ -94,6 +98,8 @@ const Project = () => {
               </p>
             </Link>
           </h1>
+          <h1 class="text-white">pure HTML5,css3 and js</h1>
+
         </div>
         {/*  */}
         <div
@@ -116,6 +122,8 @@ const Project = () => {
               </p>
             </Link>
           </h1>
+          <h1 class="text-white">vite react using portfolio</h1>
+
         </div>
               
       </div>
