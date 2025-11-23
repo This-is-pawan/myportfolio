@@ -2,8 +2,8 @@ import React from "react";
 import ias from "../pages/img/ias.png";
 import unsplash from "../pages/img/unsplash.png";
 import cocktail from "../pages/img/cocktail.png";
- import unsplashs from "..pages/img/unsplash.png"
-;
+import unsplashs from "./img/unsplash.png";
+
 
 import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
