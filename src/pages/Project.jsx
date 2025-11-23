@@ -25,6 +25,32 @@ const Project = () => {
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
           } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
         >
+            
+           <img
+            src={unsplashs}
+            alt="unsplashs"
+            title="unsplashs"
+            className="rounded-t-xl object-cover border-none"
+          /> 
+           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
+            <Link
+              className="flex justify-around items-center"
+              to="https://g-authentication-frontend.onrender.com"
+            >
+              
+              <FaGithub />
+              <p className="text-[0.9rem] text-blue-900 underline">
+                Go to project ➟{" "}
+              </p>
+            </Link>
+          </h1>
+        </div> 
+        {/*  */}
+        <div
+          className={`shadow-xl ${
+            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
+          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
+        >
           <img
             src={cocktail}
             alt="ias_course"
@@ -69,6 +95,7 @@ const Project = () => {
             </Link>
           </h1>
         </div>
+        {/*  */}
         <div
           className={`shadow-xl ${
             isDarkTheme ? "bg-pink-950" : "bg-pink-800"
@@ -90,31 +117,7 @@ const Project = () => {
             </Link>
           </h1>
         </div>
-              <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-            
-           <img
-            src={unsplashs}
-            alt="unsplashs"
-            title="unsplashs"
-            className="rounded-t-xl object-cover border-none"
-          /> 
-           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
-            <Link
-              className="flex justify-around items-center"
-              to="https://g-authentication-frontend.onrender.com"
-            >
               
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-        </div> 
       </div>
     </div>
   );
