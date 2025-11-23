@@ -122,7 +122,7 @@ const Project = () => {
               </p>
             </Link>
           </h1>
-          <h1 class="text-white text-center pt-5 pb-5 ">vite react using portfolio</h1>
+          <h1 class="text-white text-center pt-5 pb-5 ">vite react  portfolio</h1>
 
         </div>
               
