@@ -2,7 +2,7 @@ import React from "react";
 import ias from "../pages/img/ias.png";
 import unsplash from "../pages/img/unsplash.png";
 import cocktail from "../pages/img/cocktail.png";
- import unsplash from "..pages/img/unsplash.png"
+ import unsplashs from "..pages/img/unsplash.png"
 ;
 
 import profile from "../pages/img/profile.png";
@@ -121,9 +121,9 @@ const Project = () => {
         >
             
            <img
-            src={unsplash}
-            alt="unsplash"
-            title="unsplash"
+            src={unsplashs}
+            alt="unsplashs"
+            title="unsplashs"
             className="rounded-t-xl object-cover border-none"
           /> 
            <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
