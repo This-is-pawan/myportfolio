@@ -3,7 +3,7 @@ import ias from "../pages/img/ias.png";
 
 import cocktail from "../pages/img/cocktail.png";
 import unsplashs from "./img/unsplash.png";
-import payroll from 'src/pages/img/payrolldashboard.png'
+import payroll from './img/payrolldashboard.png'
 
 import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
