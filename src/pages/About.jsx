@@ -15,7 +15,7 @@ const About = () => {
     >
       {/* Resume Section */}
       <div className="w-60 mx-auto mb-6 flex justify-center items-center text-center p-7 cursor-pointer shadow-xl bg-slate-100 text-black rounded-xl mt-20">
-        <a href="/resume.pdf" download>
+        <a href="/src/pages/PawanJalandhara_InternshalaResume.pdf" download>
         📜 Resume
         </a>
       </div>
