@@ -3,7 +3,7 @@ import ias from "../pages/img/ias.png";
 
 import cocktail from "../pages/img/cocktail.png";
 import unsplashs from "./img/unsplash.png";
-
+import payroll from 'src/pages/img/payrolldashboard.png'
 
 import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
@@ -125,6 +125,33 @@ const Project = () => {
           <h1 class="text-white text-center pt-5 pb-5 ">vite react  portfolio</h1>
 
         </div>
+        {/*  */}
+        
+ <div
+          className={`shadow-xl ${
+            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
+          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
+        >
+          <img
+            src={payroll}
+            alt="payroll"
+            title="payroll"
+            className="rounded-t-xl object-cover border-none"
+          />
+          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
+            <Link className="flex justify-around items-center" to="/">
+            
+              <FaGithub />
+              <p className="text-[0.9rem] text-blue-900 underline">
+                Go to project ➟{" "}
+              </p>
+            </Link>
+          </h1>
+          <h1 class="text-white text-center pt-5 pb-5 ">vite react  portfolio</h1>
+
+        </div>
+
+        {/*  */}
               
       </div>
     </div>
