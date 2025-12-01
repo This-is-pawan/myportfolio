@@ -62,7 +62,7 @@ const Project = () => {
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
             <Link
               className="flex justify-around items-center"
-              to="https://statuesque-marshmallow-7b3bc6.netlify.app"
+              to="https://delicate-manatee-661e56.netlify.app"
             >
               {" "}
               <FaGithub />
@@ -89,7 +89,7 @@ const Project = () => {
           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
             <Link
               className="flex justify-around items-center"
-              to="https://launchias.netlify.app"
+              to="https://statuesque-marshmallow-7b3bc6.netlify.app"
             >
               {" "}
               <FaGithub />
