@@ -1,52 +1,100 @@
+import React, { useState } from "react";
 import { RiFeedbackLine } from "react-icons/ri";
-
-import  { useState } from "react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { GlobalContext } from "../components/ContextApi";
+
 const Feedback = () => {
- const navigate=useNavigate()
-  const { isDarkTheme,toast } = GlobalContext();
-  const [name,setName]=useState()
-  const [password,setPassword]=useState()
-  const submitHandle=(e)=>{
-e.preventDefault();
-// console.log(name,password);
-if(name && password){
-toast.success(`Thanks ${name} For Feedback!`)
-navigate('/')
-setName('')
-setPassword('')
-}else{
-  toast.error("something short!")
-}
-  }
+  const navigate = useNavigate();
+  const { isDarkTheme, toast } = GlobalContext();
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const submitHandle = async (e) => {
+    e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      return toast.error("Please fill all fields");
+    }
+
+    try {
+      const res = await fetch("http://localhost:4000/api/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success(`Thanks ${form.name}!`);
+        navigate("/");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        toast.error(data.msg || "Error sending feedback");
+      }
+    } catch (error) {
+      toast.error("Server error");
+    }
+  };
+
   return (
-    <div>
-      <div className={` w-40 m-auto fixed top-60 right-0 left-0 shadow-xl  shadow-slate-500 ${isDarkTheme?'bg-black ':'bg-pink-200 '}  text-center rounded-2xl  cursor-pointer `}>
-              <h2 className="p-2 flex justify-center items-center" ><RiFeedbackLine className="p-1 text-2xl"/>feedback</h2>
-              <form onSubmit={submitHandle}  >
-                <div className="w-40 ">
-                  <div className="w-full p-2">
-                    <input type=" text" className="text-[0.8rem] p-1 w-full rounded-full px-2 focus:outline-none" onChange={(e)=>{setName(e.target.value)}} placeholder="Name"/>
-                  </div>
-                  <div className="w-full p-2" >
-                    <input type="email" className="text-[0.8rem] p-1 w-full rounded-full px-2 focus:outline-none" onChange={(e)=>{setPassword(e.target.value)}} placeholder="Email" />
-                  </div>
-                 <div className="w-full p-2">
-  <textarea
-    className="text-[0.8rem] p-1 w-full rounded-xl px-2 focus:outline-none"
-    onChange={(e) => setPassword(e.target.value)}
-    placeholder="write"
-    rows={3} 
-  />
-</div>
+    <div className="flex justify-center items-center min-h-screen px-4">
+      <div
+        className={`w-full max-w-md p-6 rounded-xl shadow-lg ${
+          isDarkTheme ? "bg-slate-900 text-white" : "bg-white text-gray-800"
+        }`}
+      >
+        <h2 className="text-xl font-bold text-center mb-4 flex justify-center items-center gap-2">
+          <RiFeedbackLine /> Feedback
+        </h2>
 
-                </div>
-                <button className={`btn ${isDarkTheme?"bg-pink-200":"bg-pink-800"}  border-none w-16 h-6 mb-4`}>submit</button>
-              </form>
-            </div>
+        <form onSubmit={submitHandle} className="space-y-4">
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            className="w-full p-2 rounded-md border outline-none"
+          />
+
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            className="w-full p-2 rounded-md border outline-none"
+          />
+
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="Write your feedback..."
+            rows={4}
+            className="w-full p-2 rounded-md border outline-none"
+          />
+
+          <button
+            className="w-full py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feedback
+export default Feedback;
