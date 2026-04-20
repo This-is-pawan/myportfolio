@@ -1,158 +1,79 @@
 import React from "react";
-import ias from "../pages/img/ias.png";
-
-import cocktail from "../pages/img/cocktail.png";
-import unsplashs from "./img/unsplash.png";
-import payroll from './img/payrolldashboard.png'
-
-import profile from "../pages/img/profile.png";
 import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
+import ias from "../pages/img/ias.png";
+import cocktail from "../pages/img/cocktail.png";
+import unsplashs from "./img/unsplash.png";
+import payroll from "./img/payrolldashboard.png";
+import profile from "../pages/img/profile.png";
+
+const projects = [
+  {
+    img: unsplashs,
+    link: "https://g-authentication-frontend.onrender.com",
+    text: "Full Stack MERN Authentication App",
+  },
+  {
+    img: cocktail,
+    link: "https://delicate-manatee-661e56.netlify.app",
+    text: "React Routing Project",
+  },
+  {
+    img: ias,
+    link: "https://statuesque-marshmallow-7b3bc6.netlify.app",
+    text: "HTML, CSS, JS Project",
+  },
+  {
+    img: profile,
+    link: "/",
+    text: "React Portfolio",
+  },
+  {
+    img: payroll,
+    link: "https://payroll-advance.vercel.app/",
+    text: "Payroll SaaS Frontend",
+  },
+];
 
 const Project = () => {
   const { isDarkTheme } = GlobalContext();
 
   return (
     <div
-      className={`w-full${
-        isDarkTheme ? "bg-gradient-to-r from-slate-300 to-gray-800" : ""
-      }  p-4 min-h-screen `}
+      className={`min-h-screen py-10 px-4 ${
+        isDarkTheme ? "bg-slate-900 text-white" : "bg-slate-100 text-gray-800"
+      }`}
     >
-      <div className="  grid grid-cols-2 gap-8 mt-20 max-[600px]:grid-cols-1 gap-4 ">
-        <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-            
-           <img
-            src={unsplashs}
-            alt="unsplashs"
-            title="unsplashs"
-            className="rounded-t-xl object-cover border-none"
-          /> 
-           <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
-            <Link
-              className="flex justify-around items-center"
-              to="https://g-authentication-frontend.onrender.com"
-            >
-              
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-         <h1 class="text-white text-center pt-5 pb-5">full stack with using MERN STACK technology</h1>
+      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((p, index) => (
+          <div
+            key={index}
+            className={`rounded-xl overflow-hidden shadow-lg hover:scale-105 transition ${
+              isDarkTheme ? "bg-slate-800" : "bg-white"
+            }`}
+          >
+            <img
+              src={p.img}
+              alt="project"
+              className="w-full h-48 object-cover"
+            />
 
-        </div> 
-        {/*  */}
-        <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-          <img
-            src={cocktail}
-            alt="ias_course"
-            title="cocktail"
-            className="rounded-t-xl object-cover border-none"
-          />
-          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer">
-            <Link
-              className="flex justify-around items-center"
-              to="https://delicate-manatee-661e56.netlify.app"
-            >
-              {" "}
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-          <h1 class="text-white text-center pt-5 pb-5">React frontend using Routing system</h1>
+            <div className="p-4 text-center">
+              <p className="mb-3">{p.text}</p>
 
-        </div>
-        {/*  */}
-        <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-          <img
-            src={ias}
-            alt="ias_course"
-            title="course"
-            className="rounded-t-xl object-cover border-none"
-          />
-          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
-            <Link
-              className="flex justify-around items-center"
-              to="https://statuesque-marshmallow-7b3bc6.netlify.app"
-            >
-              {" "}
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-          <h1 class="text-white text-center pt-5 pb-5 ">pure HTML5,css3 and js</h1>
-
-        </div>
-        {/*  */}
-        <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-          <img
-            src={profile}
-            alt="profile"
-            title="profile"
-            className="rounded-t-xl object-cover border-none"
-          />
-          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
-            <Link className="flex justify-around items-center" to="/">
-            
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-          <h1 class="text-white text-center pt-5 pb-5 ">vite react  portfolio</h1>
-
-        </div>
-        {/*  */}
-        
- <div
-          className={`shadow-xl ${
-            isDarkTheme ? "bg-pink-950" : "bg-pink-800"
-          } rounded-xl  transform transition duration-300 hover:scale-95 shadow-2xl shadow-cyan-800 border-none`}
-        >
-          <img
-            src={payroll}
-            alt="payroll"
-            title="payroll"
-            className="rounded-t-xl object-cover border-none"
-          />
-          <h1 className=" text-3xl m-4 hover:text-purple-600  transform transition duration-300 cursor-pointer ">
-            <Link className="flex justify-around items-center" to="https://payroll-advance.vercel.app/">
-            
-              <FaGithub />
-              <p className="text-[0.9rem] text-blue-900 underline">
-                Go to project ➟{" "}
-              </p>
-            </Link>
-          </h1>
-          <h1 class="text-white text-center pt-5 pb-5 ">payroll Sass frontend project</h1>
-
-        </div>
-
-        {/*  */}
-              
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-center items-center gap-2 text-blue-500 hover:underline"
+              >
+                <FaGithub />
+                View Project
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
