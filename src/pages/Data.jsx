@@ -31,34 +31,33 @@ export default skills;
 
 export const timeLine = [
   {
-    text: "I learned the basics this year and understood how it works.",
-    year: 2023,
-    learnigone: "Learning HTML5 and CSS3.",
-    learnigsecond: "Made basic projects.",
+    text: "I started my web development journey in September and built a strong foundation in frontend technologies.",
+    year: "Sep 2024",
+    learnigone: "Learning HTML5, CSS3, and basic JavaScript.",
+    learnigsecond: "Built small projects to understand layouts and responsiveness.",
   },
   {
-    text: "I completed learning the basics and frontend with frameworks like React.js and its hooks and redux toolkit.",
-    year: 2024,
-    learnigone: "Learning HTML5, CSS3, and JavaScript.",
-    learnigsecond:
-      "Made a basic project 'LaunchpadIAS' on my GitHub profile and learned about Git and GitHub.",
+    text: "I improved my frontend skills and started working with modern tools and frameworks.",
+    year: "Late 2024",
+    learnigone: "Learning advanced JavaScript (ES6+) and DOM manipulation.",
+    learnigsecond: "Started React.js and built beginner-level projects.",
   },
   {
-    text: "I completed my backend learning and built some full-stack projects like authentication and e-commerce.",
-    year: 2025,
+    text: "I moved into full-stack development and understood how frontend connects with backend systems.",
+    year: "2025",
     learnigone: "Learning Node.js, Express, and MongoDB.",
-    learnigsecond: "Learning frontend and backend (MERN Stack).",
+    learnigsecond: "Built full-stack projects like authentication systems and CRUD apps.",
   },
   {
-    text: "I became a MERN Stack full developer and started building professional and scalable applications.",
-    year: 2026,
-    learnigone: "Working with React.js, Node.js, Express, and MongoDB in real-world projects.",
-    learnigsecond: "Improving deployment, performance optimization, authentication, and API integration skills.",
-  },{
-    text: "I focused on strengthening my problem-solving ability and DSA concepts to become a more efficient developer.",
-    year: 2027,
-    learnigone: "Learning Data Structures and Algorithms with JavaScript.",
-    learnigsecond: "Solving problems on platforms  LeetCode",
+    text: "I became confident in MERN stack development and started building real-world scalable applications.",
+    year: "Early 2026",
+    learnigone: "Working on API integration, authentication (JWT), and project structuring.",
+    learnigsecond: "Improving UI/UX, performance, and deployment skills.",
+  },
+  {
+    text: "By April 2026, I completed my core MERN stack journey and started preparing for interviews and advanced topics.",
+    year: "Apr 2026",
+    learnigone: "Practicing Data Structures and Algorithms (DSA) in JavaScript.",
+    learnigsecond: "Solving problems on platforms like LeetCode and improving problem-solving skills.",
   },
 ];
-
