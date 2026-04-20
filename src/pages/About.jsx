@@ -32,9 +32,12 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
-            <div
+            <a
               key={index}
-              className={`p-5 rounded-xl shadow-lg transition hover:scale-105 ${
+              href={skill.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`block p-5 rounded-xl shadow-lg transition hover:scale-105 ${
                 isDarkTheme ? "bg-slate-800" : "bg-white"
               }`}
             >
@@ -51,7 +54,7 @@ const About = () => {
               </div>
 
               <p className="text-right mt-2 text-sm">{skill.percentage}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
