@@ -90,17 +90,7 @@ Skilled in building responsive and scalable web applications using React.js, Nod
           LinkedIn ➟
         </a>
 
-        {/* Internal Link (Optional) */}
-        <Link
-          to="/projects"
-          className={`btn border-none rounded-full px-6 
-          ${isDarkTheme
-            ? "bg-gradient-to-r from-purple-900 to-purple-500"
-            : "bg-gradient-to-r from-purple-600 to-pink-500 shadow-2xl"
-          }`}
-        >
-          View Projects ➟
-        </Link>
+      
 
       </div>
 
