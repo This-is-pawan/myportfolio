@@ -12,19 +12,19 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 const skills = [
-  { skill: "HTML5", percentage: "90%", value: 90, icon :<FaHtml5/> },
-  { skill: "CSS3", percentage: "90%", value: 89 , icon : <SiCss3/> },
-  { skill: "Javascript", percentage: "90%", value: 88 ,icon:<IoLogoJavascript/>},
-  { skill: "Reactjs", percentage: "75%", value: 95, icon: <FaReact/>},
-  { skill: "Nodejs", percentage: "80%", value: 90 ,icon:<FaNodeJs/>},
-  { skill: "Mongodb", percentage: "70%", value: 70 ,icon:<SiMongodb/>},
-  { skill: "Express", percentage: "78%", value: 78 ,icon:<SiExpress/>},
-  { skill: "deployment", percentage: "70%", value: 70,icon: <AiOutlineDeploymentUnit/>},
-  { skill: "Nextjs", percentage: "60%", value: 60,icon: <RiNextjsFill />},
-  { skill:"Typescript", percentage: "70%", value: 70,icon:<SiTypescript/>},
-  { skill:"MySql", percentage:"40%", value:40,icon:<SiMysql/>},
-  { skill: "Git", percentage: "70%", value: 70 ,icon:<FaGitAlt/>},
-  { skill: "Github", percentage: "80%", value: 80 ,icon:<FaGithub/>},
+  { skill: "HTML5",  icon :<FaHtml5/> },
+  { skill: "CSS3" , icon : <SiCss3/> },
+  { skill: "Javascript",icon:<IoLogoJavascript/>},
+  { skill: "Reactjs",  icon: <FaReact/>},
+  { skill: "Nodejs", icon:<FaNodeJs/>},
+  { skill: "Mongodb" ,icon:<SiMongodb/>},
+  { skill: "Express" ,icon:<SiExpress/>},
+  { skill: "deployment",icon: <AiOutlineDeploymentUnit/>},
+  { skill: "Nextjs",icon: <RiNextjsFill />},
+  { skill:"Typescript",icon:<SiTypescript/>},
+  { skill:"MySql",icon:<SiMysql/>},
+  { skill: "Git" ,icon:<FaGitAlt/>},
+  { skill: "Github" ,icon:<FaGithub/>},
 ];
 
 export default skills;
