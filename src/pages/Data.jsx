@@ -12,19 +12,20 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 const skills = [
-  { skill: "HTML5",  icon :<FaHtml5/> },
-  { skill: "CSS3" , icon : <SiCss3/> },
-  { skill: "Javascript",icon:<IoLogoJavascript/>},
-  { skill: "Reactjs",  icon: <FaReact/>},
-  { skill: "Nodejs", icon:<FaNodeJs/>},
-  { skill: "Mongodb" ,icon:<SiMongodb/>},
-  { skill: "Express" ,icon:<SiExpress/>},
-  { skill: "deployment",icon: <AiOutlineDeploymentUnit/>},
-  { skill: "Nextjs",icon: <RiNextjsFill />},
-  { skill:"Typescript",icon:<SiTypescript/>},
-  { skill:"MySql",icon:<SiMysql/>},
-  { skill: "Git" ,icon:<FaGitAlt/>},
-  { skill: "Github" ,icon:<FaGithub/>},
+  { skill: "HTML5",  icon :<FaHtml5/>, link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  { skill: "CSS3" , icon : <SiCss3/>, link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+  { skill: "Javascript",icon:<IoLogoJavascript/>, link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+  { skill: "Reactjs",  icon: <FaReact/>,  link: "https://react.dev/"},
+  { skill: "Nodejs", icon:<FaNodeJs/>, link: "https://nodejs.org/"},
+  { skill: "Mongodb" ,icon:<SiMongodb/>, link: "https://www.mongodb.com/"},
+  { skill: "Express" ,icon:<SiExpress/>, link: "https://expressjs.com/"},
+  { skill: "deployment",icon: <AiOutlineDeploymentUnit/>, link: "https://vercel.com/" },
+  { skill: "Nextjs",icon: <RiNextjsFill />, link: "https://nextjs.org/"},
+  { skill:"Typescript",icon:<SiTypescript/>, link: "https://www.typescriptlang.org/"},
+  { skill:"MySql",icon:<SiMysql/>,   link: "https://www.mysql.com/"},
+  { skill: "Git" ,icon:<FaGitAlt/>,   link: "https://git-scm.com/"},
+  { skill: "Github" ,icon:<FaGithub/>,link: "https://github.com/This-is-pawan" },
 ];
 
 export default skills;
