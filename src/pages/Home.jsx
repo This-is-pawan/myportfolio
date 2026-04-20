@@ -1,76 +1,57 @@
-
-import React from 'react'
-import img from '../pages/img/img.png'
-import { Link } from 'react-router-dom'
-import { GlobalContext } from '../components/ContextApi'
+import React from "react";
+import img from "../pages/img/img.png";
+import { GlobalContext } from "../components/ContextApi";
 
 const Home = () => {
-  const { isDarkTheme } = GlobalContext()
+  const { isDarkTheme } = GlobalContext();
 
   return (
-    <div className='w-full min-h-screen flex flex-col justify-center items-center px-4'>
-
-      {/* Profile Image */}
-      <div className='flex justify-center items-center p-5'>
-        <img
-          src={img}
-          alt="profile_picture"
-          className='w-40 h-40 rounded-full object-cover mx-auto border-4 border-white shadow-lg'
-        />
-      </div>
+    <div
+      className={`min-h-screen flex flex-col justify-center items-center text-center px-4 ${
+        isDarkTheme ? "bg-slate-900 text-white" : "bg-white text-gray-800"
+      }`}
+    >
+      {/* Image */}
+      <img
+        src={img}
+        alt="profile"
+        className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-blue-500 shadow-lg mb-6"
+      />
 
       {/* Heading */}
-      <h1 className='w-full text-5xl font-bold max-sm:text-3xl text-center'>
-        👋🏻 Hey, I'm Pawan
+      <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+        👋 Hey, I'm Pawan
       </h1>
 
       {/* Description */}
-      <p className={`text-center my-6 leading-8 max-w-xl capitalize 
-        ${isDarkTheme ? 'text-pink-800' : 'text-pink-300'}`}>
-   Full Stack MERN Developer with over 1 year of experience
-Experienced in handling both frontend and backend development.
-Skilled in building responsive and scalable web applications using React.js, Node.js, Express, and MongoDB, including REST API integration and user authentication systems.
-        
-      
+      <p className="max-w-xl leading-7 text-sm sm:text-base opacity-90">
+        Full Stack MERN Developer with 1+ year experience. Skilled in building
+        responsive web apps using React, Node.js, Express, and MongoDB with
+        authentication and REST APIs.
       </p>
 
-      {/* Buttons Section */}
-      <div className='flex flex-wrap gap-4 justify-center mt-6'>
-
-        {/* GitHub Button */}
+      {/* Buttons */}
+      <div className="flex flex-wrap gap-4 mt-6">
         <a
           href="https://github.com/This-is-pawan"
           target="_blank"
-          rel="noopener noreferrer"
-          className={`btn border-none rounded-full px-6 
-          ${isDarkTheme
-            ? "bg-gradient-to-r from-slate-900 to-slate-500"
-            : "bg-gradient-to-r from-red-700 to-blue-500 shadow-2xl"
-          }`}
+          rel="noreferrer"
+          className="px-6 py-2 rounded-full bg-gradient-to-r from-gray-800 to-black text-white hover:scale-105 transition"
         >
-          GitHub ➟
+          GitHub
         </a>
 
-        {/* LinkedIn Button */}
         <a
           href="https://www.linkedin.com/in/pawan-kumar-7a8054329"
           target="_blank"
-          rel="noopener noreferrer"
-          className={`btn border-none rounded-full px-6 
-          ${isDarkTheme
-            ? "bg-gradient-to-r from-blue-900 to-blue-500"
-            : "bg-gradient-to-r from-blue-600 to-indigo-500 shadow-2xl"
-          }`}
+          rel="noreferrer"
+          className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:scale-105 transition"
         >
-          LinkedIn ➟
+          LinkedIn
         </a>
-
-      
-
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
