@@ -1,102 +1,93 @@
-import React, { useContext } from "react";
+import React from "react";
 import { GlobalContext } from "../components/ContextApi";
-import skills from "./Data";
-import { timeLine } from "./Data";
+import skills, { timeLine } from "./Data";
+
 const About = () => {
   const { isDarkTheme } = GlobalContext();
 
+  const container = "max-w-6xl mx-auto px-4";
+
   return (
     <div
-      className={`w-full min-h-screen py-10 px-4 ${
+      className={`min-h-screen py-10 ${
         isDarkTheme
-          ? "bg-gradient-to-r from-slate-900 to-slate-500 text-white"
-          : ""
+          ? "bg-slate-900 text-white"
+          : "bg-slate-100 text-gray-800"
       }`}
     >
-      {/* Resume Section */}
-      <div className="w-60 mx-auto mb-6 flex justify-center items-center text-center p-7 cursor-pointer shadow-xl bg-slate-100 text-black rounded-xl mt-20">
-        <a href="/src/pages/PawanJalandhara_InternshalaResume.pdf" download>
-        📜 Resume
+      {/* Resume */}
+      <div className={`${container} flex justify-center mt-10`}>
+        <a
+          href="/src/pages/PawanJalandhara_InternshalaResume.pdf"
+          download
+          className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition"
+        >
+          📜 Download Resume
         </a>
       </div>
 
-      {/* Skills Section */}
-      <div
-        className={`text-center w-80 mx-auto p-4 shadow-xl  rounded-xl max-w-3xl mb-8 font-semibold text-3xl tracking-wider ${
-          isDarkTheme ? "bg-white text-pink-800" : "bg-slate-800 text-pink-100"
-        }`}
-      >
-        Skills
+      {/* Skills */}
+      <div className={`${container} mt-12`}>
+        <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className={`p-5 rounded-xl shadow-lg transition hover:scale-105 ${
+                isDarkTheme ? "bg-slate-800" : "bg-white"
+              }`}
+            >
+              <div className="flex justify-between items-center mb-3">
+                <span className="text-2xl">{skill.icon}</span>
+                <span className="font-semibold">{skill.skill}</span>
+              </div>
+
+              <div className="w-full bg-gray-300 h-2 rounded-full">
+                <div
+                  className="bg-gradient-to-r from-blue-500 to-pink-500 h-2 rounded-full"
+                  style={{ width: skill.percentage }}
+                ></div>
+              </div>
+
+              <p className="text-right mt-2 text-sm">{skill.percentage}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-        {skills.map((skillname, index) => (
-          <div
-            key={index}
-            className={`${
-              isDarkTheme
-                ? "bg-slate-50"
-                : "bg-gradient-to-br from-blue-500 to-red-600"
-            }  text-black text-center shadow-xl rounded-xl p-3 cursor-pointer hover:bg-slate-300 transition-all 5s text- `}
-          >
-            <div className="flex justify-around  items-center border p-3 font-bold tracking-widest text-pink-800 ">
-              <h3 className={`text-3xl ${isDarkTheme?'text-blue-700':'text-white'}`}>{skillname.icon}</h3>
-              <h3>{skillname.skill}</h3>
-              <div
-                className="bg-gradient-to-br from-blue-500 to-pink-300 radial-progress bg-primary text-primary-content border-4 border-primary"
-                style={{ "--value": skillname.value }}
-                role="progressbar"
-              >
-                {skillname.percentage} 
-              </div>
-            </div>
+      {/* Timeline */}
+      <div className={`${container} mt-16`}>
+        {timeLine.map((time, index) => (
+          <div key={index} className="mb-10">
+            <h3 className="text-2xl font-bold mb-4">{time.year}</h3>
+
+            <ul className="space-y-2">
+              <li>✔ {time.learnigone}</li>
+              <li>✔ {time.learnigsecond}</li>
+            </ul>
+
+            <p className="mt-3 text-sm opacity-80">{time.text}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-8  border p-4 border-dotted">
-        {timeLine.map((time, index) => {
-          return (
-            <article className="mt-20" key={index}>
-              <span className="underline underline-offset-4 text-3xl">
-                {time.year}
+      {/* Interest */}
+      <div className={`${container} mt-12 text-center`}>
+        <h2 className="text-3xl font-bold mb-6">Interests</h2>
+
+        <div className="flex flex-wrap justify-center gap-4">
+          {["🎧 Music", "👨🏻‍💻 Learning", "🚜 Agriculture", "💪 Helping"].map(
+            (item, i) => (
+              <span
+                key={i}
+                className="px-5 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow"
+              >
+                {item}
               </span>
-              <ul className="steps steps-vertical">
-                <li
-                  className={`step ${
-                    isDarkTheme ? "step-primary" : "step-info"
-                  }`}
-                >
-                  {time.learnigone}
-                </li>
-                <li
-                  className={`step ${
-                    isDarkTheme ? "step-primary" : "step-info"
-                  }`}
-                >
-                  {time.learnigsecond}
-                </li>
-              </ul>
-
-              <p className="pra">{time.text}</p>
-            </article>
-          );
-        })}
-      </div>
-
-      <div
-        className={`text-center w-80 mx-auto p-4 shadow-xl  rounded-xl max-w-3xl m-8 font-semibold text-3xl tracking-wider ${
-          isDarkTheme ? "bg-white text-pink-800" : "bg-slate-800 text-pink-100"
-        }`}
-      >
-        Interest
-      </div >
-      <div className={`${isDarkTheme?'bg-slate-100':'bg-slate-100'}m-auto shadow-xl p-6 sm:flex justify-center items-center w-full`}>
-     <div className="bg-slate-400 shadow-lg m-4 p-3 rounded-full text-xl text-purple-950">🎧ྀི♪⋆.✮Music</div>
-     <div className="bg-slate-400 shadow-lg m-4 p-3 rounded-full text-xl text-purple-950">👨🏻‍💻Learning</div>
-     <div className="bg-slate-400 shadow-lg m-4 p-3 rounded-full text-xl text-purple-950">🚜🌾👨Agriculture</div>
-     <div className="bg-slate-400 shadow-lg m-4 p-3 rounded-full text-xl text-purple-950">💪Helps other</div>
-     
+            )
+          )}
+        </div>
       </div>
     </div>
   );
