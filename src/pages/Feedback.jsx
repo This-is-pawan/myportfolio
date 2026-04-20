@@ -7,8 +7,6 @@ const Feedback = () => {
   const navigate = useNavigate();
   const { isDarkTheme, toast } = GlobalContext();
 
-  const [Xmark, setXmark] = useState(false);
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -49,20 +47,16 @@ const Feedback = () => {
     }
   };
 
-  // ❗ If closed → don't show anything
-  if (Xmark) return null;
-
   return (
     <div className="flex justify-center items-center min-h-screen px-4">
-      
       <div
         className={`relative w-full max-w-md p-6 rounded-xl shadow-lg ${
           isDarkTheme ? "bg-slate-900 text-white" : "bg-white text-gray-800"
         }`}
       >
-        {/* ❌ Close Button */}
+        {/* ❌ Close Button → Navigate Home */}
         <button
-          onClick={() => setXmark(true)}
+          onClick={() => navigate("/")}
           className="absolute top-3 right-3 text-lg font-bold hover:text-red-500"
         >
           ✕
@@ -100,9 +94,7 @@ const Feedback = () => {
             className="w-full p-2 rounded-md border outline-none"
           />
 
-          <button
-            className="w-full py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition"
-          >
+          <button className="w-full py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition">
             Submit
           </button>
         </form>
