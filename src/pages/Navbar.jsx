@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../components/ContextApi";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
-
+import { MdOutlineWbSunny } from "react-icons/md";
+import { LuSunMoon } from "react-icons/lu";
 const Navbar = () => {
   const { toggleDarkTheme, isDarkTheme } = GlobalContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,7 +57,7 @@ const Navbar = () => {
             onClick={toggleDarkTheme}
             className="text-xl hover:scale-110 transition"
           >
-            {isDarkTheme ? "🌙" : "☀️"}
+            {isDarkTheme ?<LuSunMoon /> : <MdOutlineWbSunny/>
           </button>
 
           {/* Social Icons */}
