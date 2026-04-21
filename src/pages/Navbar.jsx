@@ -4,6 +4,7 @@ import { GlobalContext } from "../components/ContextApi";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { LuSunMoon } from "react-icons/lu";
+
 const Navbar = () => {
   const { toggleDarkTheme, isDarkTheme } = GlobalContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,12 +53,12 @@ const Navbar = () => {
         {/* Right Section */}
         <div className="flex items-center gap-4">
 
-          {/* Theme Toggle */}
+          {/* ✅ FIXED Theme Toggle Button */}
           <button
             onClick={toggleDarkTheme}
-            className="text-xl hover:scale-110 transition"
+            className="text-xl p-2 rounded-full hover:scale-110 transition duration-200"
           >
-            {isDarkTheme ?<LuSunMoon /> : <MdOutlineWbSunny/>
+            {isDarkTheme ? <MdOutlineWbSunny /> : <LuSunMoon />}
           </button>
 
           {/* Social Icons */}
