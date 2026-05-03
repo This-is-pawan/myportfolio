@@ -6,7 +6,7 @@ import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
 import unsplashs from "./img/unsplash.png";
 import payroll from "./img/payrolldashboard.png";
-// import profile from "../pages/img/profile.png";
+import profile from "../pages/img/Screenshot 2026-05-03 121633.png";
 
 const projects = [
   {
@@ -24,11 +24,11 @@ const projects = [
     link: "https://statuesque-marshmallow-7b3bc6.netlify.app",
     text: "HTML, CSS, JS Project",
   },
-  // {
-  //   img: profile,
-  //   link: "/",
-  //   text: "React Portfolio",
-  // },
+  {
+    img: deployment,
+    link: "/",
+    text: "React deployment project",
+  },
   {
     img: payroll,
     link: "https://payroll-advance.vercel.app/",
