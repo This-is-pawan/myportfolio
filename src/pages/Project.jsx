@@ -6,7 +6,7 @@ import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
 import unsplashs from "./img/unsplash.png";
 import payroll from "./img/payrolldashboard.png";
-import profile from "../pages/img/Screenshot 2026-05-03 121633.png";
+import deployment from "../pages/img/Screenshot 2026-05-03 121633.png";
 
 const projects = [
   {
