@@ -26,7 +26,7 @@ const projects = [
   },
   {
     img: deployment,
-    link: "/",
+    link: "https://frontend-deployment-project.vercel.app",
     text: "React deployment project",
   },
   {
