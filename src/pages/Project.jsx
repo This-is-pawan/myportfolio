@@ -1,7 +1,6 @@
 import React from "react";
 import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
-
 import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
 import unsplashs from "./img/unsplash.png";
