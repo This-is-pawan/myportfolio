@@ -3,16 +3,12 @@ import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
 import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
-import unsplashs from "./img/unsplash.png";
+
 import payroll from "./img/payrolldashboard.png";
 import deployment from "../pages/img/Screenshot 2026-05-03 121633.png";
 
 const projects = [
-  {
-    img: unsplashs,
-    link: "https://g-authentication-frontend.onrender.com",
-    text: "Full Stack MERN Authentication App",
-  },
+
   {
     img: cocktail,
     link: "https://delicate-manatee-661e56.netlify.app",
