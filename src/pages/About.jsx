@@ -22,7 +22,7 @@ const About = () => {
           download
           className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition"
         >
-          📜 Download Resume
+          📜 Resume
         </a>
       </div>
 
