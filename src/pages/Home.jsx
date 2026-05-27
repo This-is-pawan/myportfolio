@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../pages/img/img.png";
+import img from "../pages/img/pkimage.jpeg";
 import { GlobalContext } from "../components/ContextApi";
 
 const Home = () => {
