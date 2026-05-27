@@ -15,7 +15,7 @@ const Home = () => {
       <img
         src={img}
         alt="profile"
-        className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-blue-500 shadow-lg mb-6"
+        className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-blue-500 shadow-lg mb-6 object-cover"
       />
 
       {/* Heading */}
