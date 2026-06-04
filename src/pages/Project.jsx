@@ -5,7 +5,7 @@ import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
 
 import payroll from "./img/payrolldashboard.png";
-import deployment from "../pages/img/Screenshot 2026-05-03 121633.png";
+import deployment from "../pages/img/homepay.png";
 
 const projects = [
 
@@ -20,9 +20,9 @@ const projects = [
     text: "HTML, CSS, JS Project",
   },
   {
-    img: deployment,
-    link: "https://frontend-deployment-project.vercel.app",
-    text: "React deployment project",
+    img: Homepay,
+    link: "https://home-pay.vercel.app",
+    text: "vite deployment project",
   },
   {
     img: payroll,
