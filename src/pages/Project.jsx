@@ -8,7 +8,11 @@ import payroll from "./img/payrolldashboard.png";
 import Homepay from "../pages/img/homepay.png";
 
 const projects = [
-
+ {
+    img: Homepay,
+    link: "https://home-pay.vercel.app",
+    text: "vite deployment project",
+  },
   {
     img: cocktail,
     link: "https://delicate-manatee-661e56.netlify.app",
@@ -19,11 +23,7 @@ const projects = [
     link: "https://statuesque-marshmallow-7b3bc6.netlify.app",
     text: "HTML, CSS, JS Project",
   },
-  {
-    img: Homepay,
-    link: "https://home-pay.vercel.app",
-    text: "vite deployment project",
-  },
+ 
   {
     img: payroll,
     link: "https://payroll-advance.vercel.app/",
