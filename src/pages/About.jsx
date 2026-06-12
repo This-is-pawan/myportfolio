@@ -18,7 +18,7 @@ const About = () => {
       {/* Resume */}
       <div className={`${container} flex justify-center mt-10`}>
         <a
-          href="https://drive.google.com/file/d/1dK90rMLEPTB2ONllIv79yPHru7J4PfTy/view?usp=drive_link"
+          href=https://drive.google.com/file/d/1VQKf5DZDir1E9tqDH8Ia3EmV8bmuDJLC/view?usp=drive_link"
           download
           className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition"
         >
