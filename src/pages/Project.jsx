@@ -36,11 +36,11 @@ const Project = () => {
 
   return (
     <div
-      className={`min-h-screen py-10 mt-5 px-4 ${
+      className={`min-h-screen py-10  px-4 ${
         isDarkTheme ? "bg-slate-900 text-white" : "bg-slate-100 text-gray-800"
       }`}
     >
-      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
         {projects.map((p, index) => (
           <div
             key={index}
