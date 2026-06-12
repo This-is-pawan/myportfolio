@@ -36,7 +36,7 @@ const Project = () => {
 
   return (
     <div
-      className={`min-h-screen py-10 px-4 ${
+      className={`min-h-screen py-10 mt-5 px-4 ${
         isDarkTheme ? "bg-slate-900 text-white" : "bg-slate-100 text-gray-800"
       }`}
     >
