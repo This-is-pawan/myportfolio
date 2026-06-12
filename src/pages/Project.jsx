@@ -40,7 +40,7 @@ const Project = () => {
         isDarkTheme ? "bg-slate-900 text-white" : "bg-slate-100 text-gray-800"
       }`}
     >
-      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 border border-white">
+      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 border border-white">
         {projects.map((p, index) => (
           <div
             key={index}
