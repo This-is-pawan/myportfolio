@@ -72,7 +72,7 @@ const Navbar = () => {
               <FaXTwitter />
             </a>
             <a
-              href="https://www.linkedin.com/in/pawan-verma-7a8054329/"
+              href="https://www.linkedin.com/in/pawan-kumar-7a8054329"
               target="_blank"
               rel="noreferrer"
               className="hover:text-blue-500 transition"
