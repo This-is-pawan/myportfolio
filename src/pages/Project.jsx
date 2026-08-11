@@ -11,7 +11,7 @@ const projects = [
  {
     img: Homepay,
     link: "https://home-pay.vercel.app",
-    text: "vite deployment project",
+    text: "vite room booking project ",
   },
   {
     img: cocktail,
