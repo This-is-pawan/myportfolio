@@ -3,7 +3,6 @@ import { GlobalContext } from "../components/ContextApi";
 import { FaGithub } from "react-icons/fa";
 import ias from "../pages/img/ias.png";
 import cocktail from "../pages/img/cocktail.png";
-
 import payroll from "./img/payrolldashboard.png";
 import Homepay from "../pages/img/homepay.png";
 
