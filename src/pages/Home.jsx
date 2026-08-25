@@ -25,8 +25,7 @@ const Home = () => {
 
       {/* Description */}
       <p className="max-w-xl leading-7 text-sm sm:text-base opacity-90">
-       Frontend-Focused Full Stack Developer with 1+ year of experience building responsive and interactive web applications. Proficient in React, Next.js, JavaScript, HTML, and CSS, with additional expertise in backend development using Node.js, Express, and MongoDB. Passionate about creating intuitive user interfaces, optimizing performance, and delivering seamless user experiences across modern web applications.
-
+  Full Stack Developer with hands-on experience building modern web applications. Focused on creating clean, scalable, and reliable solutions.
       </p>
 
       {/* Buttons */}
